@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billiard Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Timer</a>
+        <a href="/rekap">Rekap</a>
+    </nav>
+    <div id="timers-container">
+        <!-- Ulangi untuk semua timer (sampai timer-8) -->
+        <div class="timer" id="timer-1">
+            <h2>Meja 1</h2>
+            <p class="display" id="display-1">00:00:00</p>
+            <p class="price" id="price-1">Harga: Rp. 0</p>
+            <button onclick="startTimer(1)">Start</button>
+            <button onclick="stopTimer(1)">Stop</button>
+            <button onclick="resetTimer(1)">Reset</button>
+        </div>
+        <div class="timer" id="timer-2">
+            <h2>Meja 2</h2>
+            <p class="display" id="display-2">00:00:00</p>
+            <p class="price" id="price-2">Harga: Rp. 0</p>
+            <button onclick="startTimer(2)">Start</button>
+            <button onclick="stopTimer(2)">Stop</button>
+            <button onclick="resetTimer(2)">Reset</button>
+        </div>
+        <div class="timer" id="timer-3">
+            <h2>Meja 3</h2>
+            <p class="display" id="display-3">00:00:00</p>
+            <p class="price" id="price-3">Harga: Rp. 0</p>
+            <button onclick="startTimer(3)">Start</button>
+            <button onclick="stopTimer(3)">Stop</button>
+            <button onclick="resetTimer(3)">Reset</button>
+        </div>
+        <div class="timer" id="timer-4">
+            <h2>Meja 4</h2>
+            <p class="display" id="display-4">00:00:00</p>
+            <p class="price" id="price-4">Harga: Rp. 0</p>
+            <button onclick="startTimer(4)">Start</button>
+            <button onclick="stopTimer(4)">Stop</button>
+            <button onclick="resetTimer(4)">Reset</button>
+        </div>
+        <div class="timer" id="timer-5">
+            <h2>Meja 5</h2>
+            <p class="display" id="display-5">00:00:00</p>
+            <p class="price" id="price-5">Harga: Rp. 0</p>
+            <button onclick="startTimer(5)">Start</button>
+            <button onclick="stopTimer(5)">Stop</button>
+            <button onclick="resetTimer(5)">Reset</button>
+        </div>
+        <div class="timer" id="timer-6">
+            <h2>Meja 6</h2>
+            <p class="display" id="display-6">00:00:00</p>
+            <p class="price" id="price-6">Harga: Rp. 0</p>
+            <button onclick="startTimer(6)">Start</button>
+            <button onclick="stopTimer(6)">Stop</button>
+            <button onclick="resetTimer(6)">Reset</button>
+        </div>
+        <div class="timer" id="timer-7">
+            <h2>Meja 7</h2>
+            <p class="display" id="display-7">00:00:00</p>
+            <p class="price" id="price-7">Harga: Rp. 0</p>
+            <button onclick="startTimer(7)">Start</button>
+            <button onclick="stopTimer(7)">Stop</button>
+            <button onclick="resetTimer(7)">Reset</button>
+        </div>
+        <div class="timer" id="timer-8">
+            <h2>Meja 8</h2>
+            <p class="display" id="display-8">00:00:00</p>
+            <p class="price" id="price-8">Harga: Rp. 0</p>
+            <button onclick="startTimer(8)">Start</button>
+            <button onclick="stopTimer(8)">Stop</button>
+            <button onclick="resetTimer(8)">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
