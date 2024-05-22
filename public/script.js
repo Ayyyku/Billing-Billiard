@@ -63,3 +63,24 @@ function calculatePrice(timerId, elapsedTime) {
     price = Math.ceil(price / 2000) * 2000;
     return price;
 }
+
+function printReceipt(timerId) {
+    const elapsedTime = timers[timerId];
+    const price = calculatePrice(timerId, elapsedTime);
+    const minutes = Math.ceil(elapsedTime / 60);
+    const receiptDetails = `
+        <p>ID Meja: ${timerId}</p>
+        <p>Waktu Bermain: ${minutes} menit</p>
+        <p>Harga: Rp. ${price.toLocaleString()}</p>
+    `;
+    document.getElementById('receipt-details').innerHTML = receiptDetails;
+    document.getElementById('receipt-container').style.display = 'block';
+}
+
+function closeReceipt() {
+    document.getElementById('receipt-container').style.display = 'none';
+}
+
+function printReceipt() {
+    window.print();
+}

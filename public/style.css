@@ -65,13 +65,20 @@ button:hover {
     color: #28a745;
 }
 
-table {
-    width: 80%;
+.table-container {
+    height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;
     margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 
 table th, table td {
     padding: 12px 15px;
@@ -79,12 +86,16 @@ table th, table td {
     text-align: left;
 }
 
+
 table th {
     background-color: #f4f4f4;
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Ensure it stays above the tbody */
 }
 
-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+table tr:hover {
+    background-color: #f1f1f1;
 }
 
 table tr:hover {
@@ -105,3 +116,23 @@ table tr:hover {
     margin-bottom: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+#receipt-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#receipt-content {
+    text-align: left;
+}
+
+#receipt-details {
+    margin-bottom: 20px;
+}
+

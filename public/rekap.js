@@ -36,7 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const dailySummaryDiv = document.getElementById('daily-summary');
             dailySummaryDiv.innerHTML = '';
 
-            for (const [date, summary] of Object.entries(data)) {
+            // Sort the daily summaries by date in descending order
+            const sortedEntries = Object.entries(data).sort((a, b) => new Date(b[0]) - new Date(a[0]));
+
+            sortedEntries.forEach(([date, summary]) => {
                 const summaryDiv = document.createElement('div');
                 summaryDiv.className = 'summary';
                 const formattedDate = new Date(date).toLocaleString('id-ID', {
@@ -51,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Total Pendapatan: Rp. ${summary.totalIncome.toLocaleString()}</p>
                 `;
                 dailySummaryDiv.appendChild(summaryDiv);
-            }
+            });
         })
         .catch(error => console.error('Error fetching daily summary:', error));
 });

@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rekapitulasi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <a href="/">Timer</a>
-        <a href="/rekap">Rekap</a>
+      <a href="/">Timer</a>
+      <a href="/rekap">Rekap</a>
     </nav>
     <h1>Rekapitulasi</h1>
-    <table id="rekap-table">
+    <div class="table-container">
+      <table id="rekap-table">
         <thead>
-            <tr>
-                <th>Nomor Meja</th>
-                <th>Lama Bermain</th>
-                <th>Hari</th>
-                <th>Harga</th>
-            </tr>
+          <tr>
+            <th>Nomor Meja</th>
+            <th>Lama Bermain</th>
+            <th>Hari</th>
+            <th>Harga</th>
+          </tr>
         </thead>
         <tbody>
-            <!-- Data akan diisi di sini oleh JavaScript -->
+          <!-- Data akan diisi di sini oleh JavaScript -->
         </tbody>
-    </table>
-    
+      </table>
+    </div>
     <h2>Total Pendapatan per Hari</h2>
     <div id="daily-summary">
-        <!-- Data total pendapatan harian akan diisi di sini oleh JavaScript -->
+      <!-- Data total pendapatan harian akan diisi di sini oleh JavaScript -->
     </div>
 
     <script src="rekap.js"></script>
-</body>
+  </body>
 </html>
