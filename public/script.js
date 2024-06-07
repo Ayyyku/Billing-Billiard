@@ -1,3 +1,8 @@
+window.addEventListener('beforeunload', function (e) {
+  e.preventDefault();
+  e.returnValue = '';
+});
+
 let timers = {};
 let intervals = {};
 
